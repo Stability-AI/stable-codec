@@ -2,3 +2,8 @@ __pycache__/
 venv/
 
 *.wav
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
