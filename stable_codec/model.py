@@ -1,18 +1,18 @@
 import json
+from typing import List, Optional, Tuple, Union
+
 import torch
 import torch.nn as nn
 import torchaudio
-
-from typing import Optional, List, Tuple, Union
 from einops import rearrange
+from stable_audio_tools import get_pretrained_model
+from stable_audio_tools.data.utils import VolumeNorm
 from stable_audio_tools.models import create_model_from_config
 from stable_audio_tools.models.fsq import DitheredFSQ
-from stable_audio_tools.models.utils import load_ckpt_state_dict
-from stable_audio_tools.training.utils import copy_state_dict
-from stable_audio_tools.data.utils import VolumeNorm
+from stable_audio_tools.models.utils import copy_state_dict, load_ckpt_state_dict
 
 from .residual_fsq import ResidualFSQBottleneck
-from stable_audio_tools import get_pretrained_model
+
 
 class StableCodec(nn.Module):
     def __init__(self,

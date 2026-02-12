@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name='stable-codec',
@@ -15,7 +15,7 @@ setup(
                       'wheel',
                       'torch==2.4',
                       'torchaudio==2.4',
-                      'stable-audio-tools==0.0.17',
+                      'stable-audio-tools==0.0.19',
                       'pytorch-lightning==2.1',
                       'prefigure==0.0.9']
 )
