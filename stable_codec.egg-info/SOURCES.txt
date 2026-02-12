@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+stable_codec/__init__.py
+stable_codec/ctc_loss.py
+stable_codec/fsq.py
+stable_codec/model.py
+stable_codec/residual_fsq.py
+stable_codec/training_demo.py
+stable_codec/training_module.py
+stable_codec.egg-info/PKG-INFO
+stable_codec.egg-info/SOURCES.txt
+stable_codec.egg-info/dependency_links.txt
+stable_codec.egg-info/requires.txt
+stable_codec.egg-info/top_level.txt

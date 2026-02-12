@@ -10,6 +10,9 @@ Model weights: https://huggingface.co/stabilityai/stable-codec-speech-16k
 
 ## Changelog
 
+### [v0.1.3] TBD
+- __Fix__ restricted Python version to <3.12 due to dependency incompatibilities
+- __Fix__ clarified installation instructions regarding Python version requirements
 ### [v0.1.2] 14-01-25
 - __New__ added hooks for `stable-codec-speech-16k-base`. 
 - __Fix__ fixed major issue with precision in FSQ token calculation, which was degrading results. Fix is currently local, will be upstreamed to `stable-audio-tools` later.
@@ -33,6 +36,12 @@ In addition to the training described in the paper, the weights for `stable-code
 ## Install
 
 The model itself is defined in [stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools) package.
+
+### Python Version Compatibility
+
+**Important:** This package currently requires **Python 3.9, 3.10, or 3.11**. Python 3.12 and later are not supported due to incompatibilities in the `stable-audio-tools` dependency chain (specifically `PyWavelets==1.4.1` and `pandas==2.0.2`).
+
+If you attempt to install on Python 3.12+, you will encounter build errors. Please use Python 3.11 or earlier.
 
 To install `stable-codec`:
 
