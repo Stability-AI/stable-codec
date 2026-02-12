@@ -1,7 +1,0 @@
-packaging
-wheel
-torch==2.4
-torchaudio==2.4
-stable-audio-tools==0.0.19
-pytorch-lightning==2.1
-prefigure==0.0.9
