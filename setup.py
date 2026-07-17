@@ -13,7 +13,7 @@ setup(
     python_requires='>=3.9',
     install_requires=['packaging',
                       'wheel',
-                      'torch==2.4',
+                      'torch==2.13.0',
                       'torchaudio==2.4',
                       'stable-audio-tools==0.0.19',
                       'pytorch-lightning==2.1',
